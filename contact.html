@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  
+  <title>Bog'lanish va Buyurtma — Gaz Meter</title>
+  <meta name="description" content="Gaz Meter rasmiy do'koni bilan bog'lanish: telefonlar, Telegram @gaz_meter, manzil: Toshkent sh., Sho'ta Rustaveli 101.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0F17'/%3E%3Ccircle cx='32' cy='32' r='24' fill='%23131B2A' stroke='%23F59E0B' stroke-width='2'/%3E%3Cpath d='M32 14c-2 6-8 12-8 18 0 7 4 12 8 16 4-4 8-9 8-16 0-6-6-12-8-18z' fill='%23F59E0B'/%3E%3Ccircle cx='32' cy='38' r='4' fill='%23FBBF24'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              amber: '#F59E0B',
+              dark: '#0B0F17',
+              card: '#131B2A',
+              border: '#1F2E45',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #0B0F17; color: #E2E8F0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
+    .glass-nav { background: rgba(11, 15, 23, 0.94); backdrop-filter: blur(14px); }
+  </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-slate-900 min-h-screen pb-16 md:pb-0">
+
+  <!-- TOP BAR -->
+  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 px-4 py-2 text-xs font-bold tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div>
+        <span>Do'kon manzili: <strong>Sho'ta Rustaveli 101</strong> · Telegram: <a href="https://t.me/gaz_meter" target="_blank" class="underline hover:text-white">@gaz_meter</a></span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-xs font-semibold">
+        <span><i class="fa-solid fa-phone mr-1"></i> +998 93 544-04-40</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 left-0 w-full z-40 glass-nav border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-amber-500/20">
+          <i class="fa-solid fa-fire-flame-simple"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-bold tracking-tight text-white font-heading">GAZ <span class="text-amber-500">METER</span></span>
+          <span class="block text-[10px] tracking-wider text-slate-400 uppercase font-semibold">Bog'lanish</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-amber-400 transition-colors">Bosh sahifa</a>
+        <a href="products.html" class="hover:text-amber-400 transition-colors">Katalog & Narxlar</a>
+        <a href="dealers.html" class="hover:text-amber-400 text-slate-300 font-semibold transition-colors">Dillerlar</a>
+        <a href="unblock.html" class="hover:text-amber-400 transition-colors">Blokdan Ochish</a>
+        <a href="about.html" class="hover:text-amber-400 transition-colors">Kompaniya haqida</a>
+        <a href="contact.html" class="text-amber-400 font-bold">Bog'lanish</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/gaz_meter" target="_blank" title="Telegram Menejer" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 hover:border-sky-500 text-sky-400 text-xs font-bold transition-all">
+          <i class="fa-brands fa-telegram"></i> @gaz_meter
+        </a>
+        <a href="tel:+998935440440" class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md">
+          <i class="fa-solid fa-phone"></i>
+          <span>+998 93 544-04-40</span>
+        </a>
+        <button id="mobileMenuBtn" class="xl:hidden text-slate-300 hover:text-white text-2xl p-2">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT & FORM SECTION -->
+  <section id="contact" class="py-16 sm:py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Contacts & Addresses -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">Aloqa Ma'lumotlari</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white font-heading mt-2">
+              Biz Bilan Bog'laning
+            </h1>
+            <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+              Hisoblagichlar xaridi, o'rnatish yoki dillerlik bo'yicha maslahat olish uchun telefon qiling yoki anketani to'ldiring.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Phones -->
+            <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0 mt-1">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Telefon raqamlar</p>
+                <a href="tel:+998935440440" class="block text-base font-bold text-white hover:text-amber-400 mt-1">+998 93 544-04-40 (Sotuv)</a>
+                <a href="tel:+998951459696" class="block text-xs text-slate-300 hover:text-amber-400 mt-0.5">+998 95 145-96-96 (Menejer)</a>
+                <a href="tel:+998951449696" class="block text-xs text-slate-300 hover:text-amber-400 mt-0.5">+998 95 144-96-96 (Menejer)</a>
+              </div>
+            </div>
+
+            <!-- Address (Samovivoz) -->
+            <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0 mt-1">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Do'kon manzili (Samovivoz)</p>
+                <p class="text-sm font-bold text-white mt-1">Toshkent sh., Yakkasaroy tumani, Sho'ta Rustaveli 101</p>
+                <p class="text-xs text-amber-400 mt-1">Dush - Shan: 09:00 - 18:00 (Yakshanba: Dam olish)</p>
+              </div>
+            </div>
+
+            <!-- Telegrams -->
+            <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl shrink-0 mt-1">
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Telegram kanallar va guruhlar</p>
+                <div class="mt-1 space-y-1 text-sm font-semibold">
+                  <a href="https://t.me/gaz_meter" target="_blank" class="block text-sky-400 hover:underline">
+                    Rasmiy Telegram menejer: <strong>@gaz_meter</strong>
+                  </a>
+                  <a href="dealers.html" class="block text-amber-400 hover:underline">
+                    Dillerlik va ulgurji shartlar: <strong>Dillerlar bo'limi</strong>
+                  </a>
+                  <a href="https://t.me/sensuschat" target="_blank" class="block text-emerald-400 hover:underline">
+                    Blokdan ochish guruhi: <strong>@sensuschat</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl shrink-0 mt-1">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Instagram sahifamiz</p>
+                <a href="https://instagram.com/gaz.meter" target="_blank" class="block text-sm font-bold text-pink-400 hover:underline mt-1">
+                  @gaz.meter
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maps Link -->
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400">Xaritada ochish:</span>
+            <div class="flex items-center gap-2">
+              <a href="https://yandex.uz/maps/?text=Toshkent+Shota+Rustaveli+101" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs text-white border border-slate-700">Yandex</a>
+              <a href="https://maps.google.com/?q=Tashkent+Shota+Rustaveli+101" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs text-white border border-slate-700">Google</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Order Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+            <h2 class="text-2xl font-bold text-white font-heading mb-6">Ariza Qoldirish</h2>
+
+            <form id="orderForm" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Ismingiz yoki Tashkilot nomi *</label>
+                <input type="text" id="userName" required placeholder="Masalan: Aziz Karimov yoki 'Metan Servis' MCHJ" class="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Telefon Raqamingiz *</label>
+                <input type="tel" id="userPhone" required placeholder="+998 90 123-45-67" value="+998 " class="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-amber-500 font-mono">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Qiziqtirgan Mahsulot Turi</label>
+                <select id="productSelect" class="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-amber-500 appearance-none">
+                  <option value="">Umumiy maslahat olish</option>
+                  <optgroup label="Aholi uchun">
+                    <option value="Zekr G4 (Smart Gibrid)">Zekr G4 (Smart Gibrid) — 1 644 500 so'm</option>
+                    <option value="Smart G4 (ASKUG)">Smart G4 (ASKUG) — 1 644 500 so'm</option>
+                  </optgroup>
+                  <optgroup label="Tijorat va umumiy ovqatlanish">
+                    <option value="Smart G6">Smart G6 — 3 072 160 so'm</option>
+                    <option value="Smart G10">Smart G10 — 4 607 700 so'm</option>
+                    <option value="Smart G16">Smart G16 — 6 036 800 so'm</option>
+                    <option value="Smart G25">Smart G25 — 7 367 360 so'm</option>
+                  </optgroup>
+                  <optgroup label="Sanoat modellari">
+                    <option value="Smart G40 (Standart)">Smart G40 (Standart) — 22 000 000 so'm</option>
+                    <option value="Smart G40 (Yuqori Bosimli Pro)">Smart G40 (Yuqori Bosimli Pro) — 48 200 000 so'm</option>
+                    <option value="Smart G65 (Standart)">Smart G65 (Standart) — 25 000 000 so'm</option>
+                    <option value="Smart G65 (Yuqori Bosimli Pro)">Smart G65 (Yuqori Bosimli Pro) — 50 200 000 so'm</option>
+                  </optgroup>
+                  <optgroup label="Smart GTI Xavfsizlik Klapanlari">
+                    <option value="Smart GTI Valve DN65">Smart GTI Valve DN65 — 27 000 000 so'm</option>
+                    <option value="Smart GTI Valve DN100">Smart GTI Valve DN100 — 40 000 000 so'm</option>
+                    <option value="Smart GTI Valve DN150">Smart GTI Valve DN150 — 50 000 000 so'm</option>
+                    <option value="Smart GTI Valve DN200">Smart GTI Valve DN200 — 57 000 000 so'm</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl flex items-start gap-2.5">
+                <input type="checkbox" id="needMontaj" class="w-4 h-4 mt-0.5 rounded accent-amber-500 cursor-pointer">
+                <label for="needMontaj" class="text-xs text-slate-300 cursor-pointer select-none">
+                  O'rnatib berish (Montaj) xizmati kerak (narxi kelishiladi)
+                </label>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Qo'shimcha izoh yoki savol (ixtiyoriy)</label>
+                <textarea id="userMessage" rows="2" placeholder="Masalan: Dillerlik shartnomasi bo'yicha hisob-faktura yuboring..." class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-amber-500"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-base flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span id="submitBtnText">Arizani Yuborish</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-brand-border py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+      <p>© 2026 "Gaz Meter". Barcha huquqlar himoyalangan. Rasmiy Telegram: <a href="https://t.me/gaz_meter" target="_blank" class="text-sky-400 font-bold hover:underline">@gaz_meter</a> · Dillerlar uchun: <a href="dealers.html" class="text-amber-400 hover:underline">Dillerlar bo'limi</a></p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 w-full z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 grid grid-cols-4 py-2 text-center text-[10px]">
+    <a href="index.html" class="flex flex-col items-center gap-1 text-slate-300">
+      <i class="fa-solid fa-house text-base"></i><span>Bosh sahifa</span>
+    </a>
+    <a href="products.html" class="flex flex-col items-center gap-1 text-slate-300">
+      <i class="fa-solid fa-gauge-high text-base text-slate-400"></i><span>Katalog</span>
+    </a>
+    <a href="dealers.html" class="flex flex-col items-center gap-1 text-slate-300">
+      <i class="fa-brands fa-telegram text-base text-sky-400"></i><span>Dillerlar</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center gap-1 text-amber-400 font-bold">
+      <i class="fa-solid fa-phone text-base text-amber-400"></i><span>Aloqa</span>
+    </a>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div id="orderSuccessModal" class="hidden fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md items-center justify-center p-4">
+    <div class="bg-slate-900 border border-amber-500/50 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl text-center">
+      <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-3xl mb-4 border border-amber-500/40">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-xl font-extrabold text-white font-heading" id="successModalTitle">Rahmat! Arizangiz qabul qilindi.</h3>
+      <p class="text-sm text-slate-300 mt-2.5 leading-relaxed" id="successModalDesc">
+        Menejerimiz tez orada (ish vaqtida 15 daqiqa ichida) siz bilan bog'lanadi.
+      </p>
+      <div class="mt-6 pt-4 border-t border-slate-800">
+        <button onclick="closeSuccessModal()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm">
+          Tushunarli (Yopish)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js?v=3.0"></script>
+  <script src="app.js?v=3.0"></script>
+</body>
+</html>
